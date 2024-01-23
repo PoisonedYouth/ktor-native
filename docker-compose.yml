@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  postgres:
+    container_name: "postgres_ktor_native"
+    image: postgres:16-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: root
+      PGUSER: root
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: db
